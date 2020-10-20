@@ -10,15 +10,14 @@
    - [Licença](#Licença)
 <!--te-->
 ## <div align="center">Requisitos<div>
-Antes de começar é necessário instalar algumas ferramentas, tais como um editor de códigos para realizar compilação dos mesmos. Os códigos desse repositório foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/), [Git Bash](https://gitforwindows.org/) e - [Docker](https://docs.docker.com/docker-for-windows/install-windows-home/). Após instalados, no prompt de comando será necessário instalar as seguintes dependências.\
+Antes de começar é necessário instalar algumas ferramentas, tais como um editor de códigos para realizar compilação dos mesmos. Os códigos desse repositório foi utilizado o [Visual Studio Code](https://code.visualstudio.com/), [NodeJS](https://nodejs.org/en/), [Git Bash](https://gitforwindows.org/) e [Docker](https://docs.docker.com/docker-for-windows/install-windows-home/). Após instalados, no prompt de comando será necessário instalar as seguintes dependências.\
 OBS:Todas as tecnologias e dependências serão instaladas via prompt de comando (bash ou cmd) e todas foram instaladas a partir da pasta raíz do repositório.
 
 - [Express.js](#express)
 - [Nodemon](#nodemon)
-- [Sqlite-async](#sqlite-async)
-- [Mongoose e dependências](#mongoose)
+- [MongoDB e dependências](#mongodb)
 - [Cors](#Cors)
-- [Docker](#Docker)
+
 
 ### <div align="center">Express</div>
 Clone este repositório: git clone <https://github.com/Ricnaga/NLW> \
@@ -31,24 +30,21 @@ npm install express \
 Após instalado o Express, é necessário instalar o monitorador [Nodemon](https://nodemon.io/): \
 npm install nodemon -D \
 
-### <div align="center">Mongoose</div>
-npm install mongoose
-npm install mongoose-paginate
-npm install require-dir
+### <div align="center">MongoDB</div>
+Com o docker instalar, abra o terminal e baixe a imagem do que contém o mongodb.
+docker pull mongo \
+Após baixado, inicie o container baixado.
+docker run --name mongodb -p 27017:27017 -d mongo \
+para ter certeza que o container foi iniciado, ao acessar o endereço localhost:27017 via navegador deve ocorrer a frase.
+"It look like you are trying to access MongoDB over http on the native drive port"
+Agora instale as seguintes dependências do mongodb para o projeto não ocorre erros de funcionamento.
+npm install mongoose \
+npm install mongoose-paginate \
+npm install require-dir \
 
 ### <div align="center">Cors</div>
+Após instalado o banco de dados e suas dependências, é necessário instalar o Cors.
 npm install cors
-
-### <div align="center">Docker</div>
-docker start mongodb
-docker stop mongodb
-docker exec -it mongodb bash
-mongo
-
-### <div align="center">Sqlite-async</div>
-Instale o banco de dados [Sqlite](https://www.nodenpm.com/sqlite-async/package.html): npm install sqlite-async \
-Feito todos os passo, é hra de iniciar a aplicação: npm start \
-Iniciado cada aplicação, abra qualquer navegador e digite http://localhost:5500 \
 
 ## <div align="center">Tecnologias utilizadas<div>
 - [NodeJS](https://nodejs.org/en/)
