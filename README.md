@@ -31,12 +31,12 @@ Após instalado o Express, é necessário instalar o monitorador [Nodemon](https
 npm install nodemon -D \
 
 ### <div align="center">MongoDB</div>
-Com o docker instalar, abra o terminal e baixe a imagem do que contém o mongodb.
+Com o docker instalar, abra o terminal e baixe a imagem do que contém o mongodb.\
 docker pull mongo \
-Após baixado, inicie o container baixado.
+Após baixado, inicie o container baixado.\
 docker run --name mongodb -p 27017:27017 -d mongo \
-para ter certeza que o container foi iniciado, ao acessar o endereço localhost:27017 via navegador deve ocorrer a frase.
-"It look like you are trying to access MongoDB over http on the native drive port"
+para ter certeza que o container foi iniciado, ao acessar o endereço localhost:27017 via navegador deve ocorrer a frase. \
+"It look like you are trying to access MongoDB over http on the native drive port"\
 Agora instale as seguintes dependências do mongodb para o projeto não ocorre erros de funcionamento.
 npm install mongoose \
 npm install mongoose-paginate \
