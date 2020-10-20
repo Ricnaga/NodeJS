@@ -43,7 +43,7 @@ npm install mongoose-paginate \
 npm install require-dir \
 
 ### <div align="center">Cors</div>
-Após instalado o banco de dados e suas dependências, é necessário instalar o Cors.
+Após instalado o banco de dados e suas dependências, é necessário instalar o Cors.\
 npm install cors
 
 ## <div align="center">Tecnologias utilizadas<div>
