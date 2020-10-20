@@ -40,7 +40,7 @@ para ter certeza que o container foi iniciado, ao acessar o endereço localhost:
 Agora instale as seguintes dependências do mongodb para o projeto não ocorre erros de funcionamento.
 npm install mongoose \
 npm install mongoose-paginate \
-npm install require-dir \
+npm install require-dir 
 
 ### <div align="center">Cors</div>
 Após instalado o banco de dados e suas dependências, é necessário instalar o Cors.\
