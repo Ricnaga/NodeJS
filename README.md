@@ -25,6 +25,8 @@ Após baixado, inicie o container baixado.\
 $ docker run --name mongodb -p 27017:27017 -d mongo \
 para ter certeza que o container foi iniciado, ao acessar o endereço localhost:27017 via navegador deve ocorrer a frase. \
 "It look like you are trying to access MongoDB over http on the native drive port"\
+Feito todos os passos, é hora de executar a aplicação.\
+$ yarn svrun
 
 ## <div align="center">Tecnologias utilizadas<div>
 - [NodeJS](https://nodejs.org/en/)
